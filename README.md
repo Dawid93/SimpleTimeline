@@ -1,9 +1,11 @@
-# wtf-gulp-starter
+# Simple Timeline
+
+Simaple responsive vertical timeline layout created in HTML and SASS. 
+
+## How to run
 
 `npm install -g gulp-cli`
 
 `npm install`
 
 `gulp`
-
-To publish your page using github pages use `npm run deploy`
