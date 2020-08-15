@@ -1,5 +1,5 @@
 .timeline {
-    max-width: 900px;
+    max-width: 1100px;
     margin: 0 auto;
     position: relative;
 
@@ -8,16 +8,14 @@
         position: absolute;
         width: 6px;
         height: 100%;
-        background: $red;
+        background: $white;
         left: 50%;
         margin-left: -3px;
-        z-index: 1;
     }
 
     &__container {
         padding: 10px 40px;
         position: relative;
-        background: $white;
         width: 50%;
 
         &::after {
@@ -30,12 +28,15 @@
             right: -12px;
             border-radius: 50%;
             border: 4px solid $lightOrange;
-            z-index: 2;
         }
     }
 }
 
 .item {
+    background: $white;
+    padding: 1.25rem 1.75rem;
+    border-radius: 10px;
+
     &__title {
         margin: 0;
     }
@@ -43,11 +44,35 @@
 
 .left {
     left: 0;
+
+    &::before { 
+        content: '';
+        height: 10px;
+        width: 10px;
+        position: absolute;
+        top: 22px;
+        right: 30px;
+        border: 10px solid $white;
+        border-width: 10px 0 10px 10px;
+        border-color: transparent transparent transparent $white;
+    }
 }
 
 .right {
     left: 50%;
-    
+
+    &::before { 
+        content: '';
+        height: 10px;
+        width: 10px;
+        position: absolute;
+        top: 22px;
+        left: 30px;
+        border: 10px solid $white;
+        border-width: 10px 10px 10px 0px;
+        border-color: transparent $white transparent;
+    }
+
     &::after {
         left: -12px;
     }
