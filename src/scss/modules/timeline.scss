@@ -77,3 +77,31 @@
         left: -12px;
     }
 }
+
+@media screen and (max-width: 600px) {
+    .timeline::before {
+      left: 30px;
+    }
+  
+    .timeline__container {
+      width: 100%;
+      padding-left: 4.25rem;
+      padding-right: 2rem;
+    }
+  
+    .timeline__container::before {
+      left: 60px;
+      border-width: 10px 10px 10px 0;
+      border-color: transparent #fff transparent transparent;
+    }
+  
+    .left::after, .right::after {
+      left: 19px;
+      top: 19px;
+      z-index: 1;
+    }
+  
+    .right {
+      left: 0;
+    }
+  }
