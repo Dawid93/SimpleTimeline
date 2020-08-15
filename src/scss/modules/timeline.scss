@@ -40,3 +40,15 @@
         margin: 0;
     }
 }
+
+.left {
+    left: 0;
+}
+
+.right {
+    left: 50%;
+    
+    &::after {
+        left: -12px;
+    }
+}
